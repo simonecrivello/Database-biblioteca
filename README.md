@@ -1,5 +1,3 @@
-# Database-biblioteca
-
 # 📚 Progetto NoSQL: Creazione Database per Applicazione Biblioteca
 
 Questo progetto ti guida passo dopo passo nella **creazione di un database MongoDB** per gestire una **biblioteca**. È pensato per chi **non ha esperienza** con i database NoSQL.
@@ -23,10 +21,10 @@ Hai due opzioni:
 
 ### 🔹 A. Ambiente locale (sul tuo computer)
 
-1. Installa MongoDB:
+1. Installa MongoDB:  
    👉 https://www.mongodb.com/try/download/community
 
-2. (Facoltativo) Installa **MongoDB Compass**, una comoda interfaccia grafica:
+2. (Facoltativo) Installa **MongoDB Compass**, una comoda interfaccia grafica:  
    👉 https://www.mongodb.com/try/download/compass
 
 3. Avvia il server MongoDB (di solito si avvia automaticamente dopo l’installazione).
@@ -35,15 +33,15 @@ Hai due opzioni:
 
 ### 🔹 B. Ambiente Cloud (consigliato per principianti)
 
-1. Vai su https://www.mongodb.com/cloud/atlas
-2. Crea un account gratuito
-3. Crea un nuovo **cluster gratuito**
-4. Crea un database chiamato `biblioteca`
+1. Vai su https://www.mongodb.com/cloud/atlas  
+2. Crea un account gratuito  
+3. Crea un nuovo **cluster gratuito**  
+4. Crea un database chiamato `biblioteca`  
 5. Carica i dati tramite MongoDB Compass oppure uno script
 
 ---
 
-## 🗄️ Struttura del database `biblioteca`
+## 🗄️ 2. Struttura del database `biblioteca`
 
 Il database `biblioteca` è composto da **tre collezioni principali**, ognuna con un ruolo specifico:
 
@@ -53,13 +51,13 @@ Il database `biblioteca` è composto da **tre collezioni principali**, ognuna co
 
 Contiene le informazioni sui libri disponibili in biblioteca.
 
-| Campo               | Tipo         | Descrizione                                       |
-|---------------------|--------------|---------------------------------------------------|
-| `titolo`            | stringa      | Titolo del libro                                  |
-| `autore`            | stringa      | Nome dell’autore                                  |
-| `anno_pubblicazione`| numero       | Anno in cui il libro è stato pubblicato           |
-| `generi`            | array        | Elenco dei generi a cui appartiene il libro       |
-| `copie_disponibili` | numero       | Numero di copie disponibili per il prestito       |
+| Campo               | Tipo         | Descrizione                                     |
+|---------------------|--------------|------------------------------------------------|
+| `titolo`            | stringa      | Titolo del libro                                |
+| `autore`            | stringa      | Nome dell’autore                                |
+| `anno_pubblicazione`| numero       | Anno in cui il libro è stato pubblicato        |
+| `generi`            | array        | Elenco dei generi a cui appartiene il libro    |
+| `copie_disponibili` | numero       | Numero di copie disponibili per il prestito    |
 
 ---
 
@@ -67,12 +65,12 @@ Contiene le informazioni sui libri disponibili in biblioteca.
 
 Contiene i dati degli utenti iscritti alla biblioteca.
 
-| Campo              | Tipo    | Descrizione                                        |
-|--------------------|---------|----------------------------------------------------|
-| `nome`             | stringa | Nome completo dell’utente                          |
-| `email`            | stringa | Indirizzo email dell’utente                        |
+| Campo              | Tipo    | Descrizione                                      |
+|--------------------|---------|--------------------------------------------------|
+| `nome`             | stringa | Nome completo dell’utente                        |
+| `email`            | stringa | Indirizzo email dell’utente                      |
 | `data_iscrizione`  | data    | Data in cui l’utente si è iscritto alla biblioteca |
-| `attivo`           | boolean | Indica se l’utente è attualmente attivo            |
+| `attivo`           | boolean | Indica se l’utente è attualmente attivo          |
 
 ---
 
@@ -80,12 +78,33 @@ Contiene i dati degli utenti iscritti alla biblioteca.
 
 Registra ogni prestito effettuato da un utente.
 
-| Campo             | Tipo      | Descrizione                                       |
-|-------------------|-----------|---------------------------------------------------|
-| `id_utente`       | ObjectId  | Riferimento all’utente che ha preso il libro     |
-| `id_libro`        | ObjectId  | Riferimento al libro preso in prestito           |
-| `data_prestito`   | data      | Data in cui il prestito è stato effettuato       |
-| `data_scadenza`   | data      | Data entro cui il libro va restituito            |
-| `restituito`      | boolean   | Indica se il libro è stato restituito o meno     |
+| Campo             | Tipo      | Descrizione                                     |
+|-------------------|-----------|------------------------------------------------|
+| `id_utente`       | ObjectId  | Riferimento all’utente che ha preso il libro   |
+| `id_libro`        | ObjectId  | Riferimento al libro preso in prestito         |
+| `data_prestito`   | data      | Data in cui il prestito è stato effettuato     |
+| `data_scadenza`   | data      | Data entro cui il libro va restituito          |
+| `restituito`      | boolean   | Indica se il libro è stato restituito o meno   |
 
 > 🔗 Le relazioni tra utenti e libri vengono gestite tramite gli **ObjectId**, che collegano i documenti tra collezioni.
+
+---
+
+### 📁 4. `autori`
+
+Elenco dei membri del team che hanno contribuito al progetto.
+
+| Campo  | Descrizione                                  |
+|--------|----------------------------------------------|
+| `nome` | Nome completo dell’autore                    |
+| `ruolo`| Ruolo svolto nel progetto                     |
+| `email`| Indirizzo email per contatti                   |
+
+Esempi di documenti:
+
+```json
+{
+  "nome": "Mario Rossi",
+  "ruolo": "Progettazione database e script di caricamento",
+  "email": "mariorossi@example.com"
+}
