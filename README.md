@@ -108,8 +108,9 @@ Esempi di documenti:
   "ruolo": "Progettazione database e script di caricamento",
   "email": "mariorossi@example.com"
 }
+```
 
-# 📦 Caricamento Dati - Progetto Biblioteca
+## 📦 3. Caricamento Dati - Progetto Biblioteca
 
 Questo README contiene **tutti i passaggi e gli script necessari** per caricare i dati di esempio nel database NoSQL `biblioteca`.
 
@@ -120,20 +121,21 @@ Puoi scegliere uno dei due metodi seguenti:
 
 ---
 
-## ✅ 1. Caricamento Locale con `mongosh`
+### ✅ 1. Caricamento Locale con `mongosh`
 
-### 🛠️ Requisiti
+#### 🛠️ Requisiti
 
 - MongoDB installato sul computer:  
   👉 https://www.mongodb.com/try/download/community  
 - Terminale disponibile con `mongosh`
 
-### ▶️ Istruzioni
+#### ▶️ Istruzioni
 
-1. Crea un file chiamato **`caricamento_locale.js`**
-2. Incolla lo script qui sotto
-3. Avvia il caricamento con il comando:
+1. In questa repo troverai un file chiamato **`caricamento_locale.js`**
+2. Scarica il file **`caricamento_locale.js`**.
+3. Nel terminale, nel percorso dove si trova il file scaricato, avvia il caricamento con il comando:
 
 ```bash
 mongosh < caricamento_locale.js
+```
 
