@@ -54,7 +54,7 @@ Contiene le informazioni sui libri disponibili in biblioteca.
 | Campo               | Tipo         | Descrizione                                     |
 |---------------------|--------------|------------------------------------------------|
 | `titolo`            | stringa      | Titolo del libro                                |
-| `autore`            | stringa      | Nome dell’autore                                |
+| `id_autori`            | array      | Id degli autori                               |
 | `anno_pubblicazione`| numero       | Anno in cui il libro è stato pubblicato        |
 | `generi`            | array        | Elenco dei generi a cui appartiene il libro    |
 | `copie_disponibili` | numero       | Numero di copie disponibili per il prestito    |
