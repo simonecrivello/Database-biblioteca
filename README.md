@@ -43,7 +43,7 @@ Hai due opzioni:
 
 ## 🗄️ 2. Struttura del database `biblioteca`
 
-Il database `biblioteca` è composto da **tre collezioni principali**, ognuna con un ruolo specifico:
+Il database `biblioteca` è composto da **quattro collezioni principali**, ognuna con un ruolo specifico:
 
 ---
 
