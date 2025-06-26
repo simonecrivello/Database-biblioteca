@@ -1,0 +1,16 @@
+[
+  {
+    "id_utente": { "$oid": "645f1e3b8a3c1a4f3c9a1b2c" },
+    "id_libro": { "$oid": "645f1e3b8a3c1a4f3c9a1b3d" },
+    "data_prestito": "2025-06-01T09:00:00Z",
+    "data_scadenza": "2025-06-21T09:00:00Z",
+    "restituito": false
+  },
+  {
+    "id_utente": { "$oid": "645f1e3b8a3c1a4f3c9a1b2d" },
+    "id_libro": { "$oid": "645f1e3b8a3c1a4f3c9a1b3e" },
+    "data_prestito": "2025-05-15T11:30:00Z",
+    "data_scadenza": "2025-06-05T11:30:00Z",
+    "restituito": true
+  }
+]

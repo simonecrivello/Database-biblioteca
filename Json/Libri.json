@@ -1,0 +1,23 @@
+[
+  {
+    "titolo": "Il nome della rosa",
+    "autore": "Umberto Eco",
+    "anno_pubblicazione": 1980,
+    "generi": ["Storico", "Giallo", "Narrativa"],
+    "copie_disponibili": 3
+  },
+  {
+    "titolo": "1984",
+    "autore": "George Orwell",
+    "anno_pubblicazione": 1949,
+    "generi": ["Distopico", "Fantascienza"],
+    "copie_disponibili": 5
+  },
+  {
+    "titolo": "La coscienza di Zeno",
+    "autore": "Italo Svevo",
+    "anno_pubblicazione": 1923,
+    "generi": ["Narrativa", "Psicologico"],
+    "copie_disponibili": 2
+  }
+]

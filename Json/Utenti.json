@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Giulia Conti",
+    "email": "giulia.conti@example.com",
+    "data_iscrizione": "2024-01-15T10:00:00Z",
+    "attivo": true
+  },
+  {
+    "nome": "Marco Neri",
+    "email": "marco.neri@example.com",
+    "data_iscrizione": "2023-11-20T14:30:00Z",
+    "attivo": true
+  },
+  {
+    "nome": "Elisa Romano",
+    "email": "elisa.romano@example.com",
+    "data_iscrizione": "2022-09-05T08:20:00Z",
+    "attivo": false
+  }
+]

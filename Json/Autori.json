@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "Mario Rossi",
+    "ruolo": "Progettazione database e script di caricamento",
+    "email": "mariorossi@example.com"
+  },
+  {
+    "nome": "Luca Bianchi",
+    "ruolo": "Creazione file JSON e documentazione",
+    "email": "lucabianchi@example.com"
+  },
+  {
+    "nome": "Sara Verdi",
+    "ruolo": "Revisione e supporto setup ambiente MongoDB",
+    "email": "saraverdi@example.com"
+  }
+]
